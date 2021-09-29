@@ -1,10 +1,6 @@
-//import 'package:blobs/blobs.dart';
-//import 'package:bubble_chart/bubble_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:horizontal_card_scrollable/bubbleCustom/bubbleNodeClassCustom.dart';
-//import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 import '../blobCustom.dart';
-//import 'bubbleNodeLeafCustom.dart';
 import 'package:horizontal_card_scrollable/bubbleCustom/bubbleChartClassCustom.dart';
 
 class BubbleChartLayout extends StatefulWidget {
@@ -38,9 +34,9 @@ class _BubbleChartLayoutState extends State<BubbleChartLayout> {
   }
 
   List<String> itemList = [
-    "Health",
-    "Yoga",
-    "Reaix",
+    // "Health",
+    // "Yoga",
+    // "Reaix",
     "Hydration",
     "Fitness",
     "Reading"
@@ -64,6 +60,10 @@ class _BubbleChartLayoutState extends State<BubbleChartLayout> {
     '5-4-345',
     '5-4-345',
     '5-4-345',
+  ];
+  List<String>? idList2 = [
+    '5-4-77',
+    '6-4-77',
   ];
 
   @override
@@ -92,21 +92,25 @@ class _BubbleChartLayoutState extends State<BubbleChartLayout> {
                       mainAxisAlignment: MainAxisAlignment.center,
                       crossAxisAlignment: CrossAxisAlignment.center,
                       children: [
-                        Checkbox(
-                          checkColor: Colors.white,
-                          fillColor:
-                              MaterialStateProperty.resolveWith(getColor),
-                          value: _selectedIndexList.contains(0) ? true : false,
-                          onChanged: (bool? value) {
-                            if (_selectedIndexList.contains(0)) {
-                              _selectedIndexList.remove(0);
-                            } else {
-                              _selectedIndexList.add(0);
-                            }
-                            setState(() {
-                              isChecked = value!;
-                            });
-                          },
+                        // Checkbox(
+                        //   checkColor: Colors.white,
+                        //   fillColor:
+                        //       MaterialStateProperty.resolveWith(getColor),
+                        //   value: _selectedIndexList.contains(0) ? true : false,
+                        //   onChanged: (bool? value) {
+                        //     if (_selectedIndexList.contains(0)) {
+                        //       _selectedIndexList.remove(0);
+                        //     } else {
+                        //       _selectedIndexList.add(0);
+                        //     }
+                        //     setState(() {
+                        //       isChecked = value!;
+                        //     });
+                        //   },
+                        // ),
+                        Icon(
+                          Icons.check_box,
+                          color: Colors.white,
                         ),
                         Text(
                           itemList[0],
