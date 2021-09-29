@@ -1,8 +1,8 @@
 import 'dart:math';
 
-import 'package:bubble_chart/src/bubble_node.dart';
-import 'package:bubble_chart/src/bubble_node_base.dart';
 import 'package:flutter/material.dart';
+import 'package:horizontal_card_scrollable/bubbleCustom/bubbleNodeClassCustom.dart';
+import 'bubleNodeBaseCustom.dart';
 
 class BubbleChart {
   final BubbleNode root;

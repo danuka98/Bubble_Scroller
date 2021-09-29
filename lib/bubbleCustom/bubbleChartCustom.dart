@@ -85,8 +85,8 @@ class _BubbleChartLayoutState extends State<BubbleChartLayout> {
                   left: node.x! - node.radius!,
                   width: node.radius! * 3,
                   height: node.radius! * 3,
-                  child: Blob.fromID(
-                    id: idList,
+                  child: Blob.random(
+                    //id: idList,
                     size: 150,
                     child: Column(
                       mainAxisAlignment: MainAxisAlignment.center,

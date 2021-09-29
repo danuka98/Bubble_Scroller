@@ -1,5 +1,5 @@
-import 'package:bubble_chart/src/bubble_node_base.dart';
 import 'package:flutter/material.dart';
+import 'bubleNodeBaseCustom.dart';
 
 class BubbleNode extends BubbleNodeBase {
   List<BubbleNode>? _children;
